@@ -20,6 +20,7 @@ update_and_upgrade() {
 update_rosdep() {
     echo -e "${GREEN}Updating rosdep and installing dependencies for ROS...${NC}"
     rosdep update --rosdistro $ROS_DISTRO
+    sudo apt-get update
     rosdep install -i --from-path /home/ubuntu/psd_ws/src --rosdistro $ROS_DISTRO -y --skip-keys SDL2
 }
 
