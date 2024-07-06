@@ -7,6 +7,7 @@ To demonstrate the capabilities of this digital twin, I've created a simple test
 
 ## How to download [IMPORTANT]:
 Since it use a submodules that contain the models of the camera and lidar, clone this repo using `git clone --recurse-submodules <this-repo-url>`
+
 ***ACHTUNG!*** Docker is needed to be installed on your system to make it works, to install it I suggest `https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-22-04`
 
 ## How to build the image and start the container
