@@ -90,7 +90,7 @@ build_cppzmq_vcpkg() {
 # Temporary fix due to an error in the library
 remove_kortex_dependency_from_ros_components() {
     echo -e "${GREEN}Removing kortex_description dependency from package.xml...${NC}"
-    sed -i '/<depend>kortex_description<\/depend>/d' /home/ubuntu/psd_ws/src/ros_components_description/package.xml
+    sed -i '/<depend>kortex_description<\/depend>/d' /home/ubuntu/psd_ws/src/psd_gazebo_sim/ros_components_description/package.xml
 }
 
 # Set directory path
