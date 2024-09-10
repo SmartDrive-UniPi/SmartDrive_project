@@ -13,4 +13,4 @@ echo "colcon build completed"
 
 # start tmuxinator
 cd "$(dirname "$SCRIPT")"
-tmuxinator start -p session_custom_sim.yml
+tmuxinator start -p session_custom_sim.yml 

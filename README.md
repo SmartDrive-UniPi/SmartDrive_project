@@ -21,8 +21,10 @@ Since it use a submodules that contain the models of the camera and lidar, clone
 ## How to use it:
 1) At every pc reboot you need to do  `docker start psd_container`
 2) After that you can access the container with `docker exec -it psd_container /bin/bash`
-3) To start the sim you need to launch it from `psd_ws/startup/` folder this script `bash sim_launch.sh`
+3) To start the sim you need to launch it from `psd_ws/startup/` folder this script `python3 sim_launch.py`
 3) CTRL + D if you want to exit the container
+
+
 
 ## First run of the container:
 To be sure that everything is setup well, check the README in the ***deps/*** folder

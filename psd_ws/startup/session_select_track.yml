@@ -1,0 +1,14 @@
+name: psd_simulator
+root: ./
+startup_window: psd_sim_with_teleop
+pre_window: |
+  source ~/.bashrc;
+  source /home/ubuntu/psd_ws/install/setup.bash
+windows:
+  - psd_sim_with_teleop:     #tmux list-windows
+      panes:
+        - python3 /home/ubuntu/psd_ws/startup/tk.py
+        - ros2 run rviz2 rviz2 -d /home/ubuntu/psd_ws/startup/rviz/psd_vehicle.rviz
+        - ros2 run custom_teleop custom_teleop_keyboard
+        - ros2 run psd_perception fake_perception
+        - ros2 run psd_slam fake_slam 
