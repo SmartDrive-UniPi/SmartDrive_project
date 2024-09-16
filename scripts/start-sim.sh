@@ -48,7 +48,7 @@ else
         --env=DISPLAY -v /dev:/dev \
         --device-cgroup-rule="c *:* rmw" \
         --name psd_container psd_noble_jazzy \
-       	/bin/bash -c "/home/ubuntu/psd_ws/deps/first_launch_script.sh"
+    #  	/bin/bash -c "/home/ubuntu/psd_ws/deps/first_launch_script.sh"
     # commit changes to docker image
     # docker commit psd_container psd_noble_jazzy
 fi
