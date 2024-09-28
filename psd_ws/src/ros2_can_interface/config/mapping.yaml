@@ -1,0 +1,40 @@
+ros_to_can:
+  /sensor/temperature_velocity:
+    can_id_base: 0x100
+    fields:
+      temperature: 
+        start_bit: 0
+        length: 32
+        type: float
+      velocity_x:
+        start_bit: 32
+        length: 32
+        type: float
+      velocity_y:
+        start_bit: 64
+        length: 32
+        type: float
+    segmentation:
+      max_payload: 8  # bytes per CAN frame
+      segments:
+        - offset: 0  # bytes
+        - offset: 4
+        - offset: 8
+
+can_to_ros:
+  /actuator/command:
+    can_id_base: 0x200
+    fields:
+      command:
+        start_bit: 0
+        length: 16
+        type: int
+      value:
+        start_bit: 16
+        length: 32
+        type: float
+    segmentation:
+      max_payload: 8  # bytes per CAN frame
+      segments:
+        - offset: 0
+        - offset: 4
