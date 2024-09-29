@@ -23,3 +23,7 @@
 	url = git@github.com:SmartDrive-UniPi/psd_docker.git
 	branch = main
 
+[submodule "psd_ws/src/ros2_can_interface"]
+	path = psd_ws/src/ros2_can_interface
+	url = https://github.com/rimaturus/ros2_can_interface.git
+	branch = master
