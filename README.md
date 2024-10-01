@@ -28,4 +28,4 @@ Since it use a submodules that contain the models of the camera and lidar, clone
 
 
 ## First run of the container:
-To be sure that everything is setup well, check the README in the ***deps/*** folder
+To be sure that everything is setup well, check the README in the ***deps/*** folder.
