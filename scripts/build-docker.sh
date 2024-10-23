@@ -1,6 +1,9 @@
 #!/bin/bash
 set -e
 
+echo "Setup gpu capabilities for container toolkit"
+bash setup_gpu.sh
+
 # Build the docker image
 # get current directory of script
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
