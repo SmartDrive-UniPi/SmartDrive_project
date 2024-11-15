@@ -1,7 +1,7 @@
 [submodule "psd_ws/src/psd_gazebo_sim"]
 	path = psd_ws/src/psd_gazebo_sim
 	url = git@github.com:SmartDrive-UniPi/psd_gazebo_sim.git
-	branch = main
+	branch = working
 	
 [submodule "psd_ws/src/psd_perception"]
 	path = psd_ws/src/psd_perception
@@ -21,7 +21,7 @@
 [submodule "psd_docker"]
 	path = psd_docker
 	url = git@github.com:SmartDrive-UniPi/psd_docker.git
-	branch = main
+	branch = working
 
 [submodule "psd_ws/src/ros2_can_interface"]
 	path = psd_ws/src/ros2_can_interface
