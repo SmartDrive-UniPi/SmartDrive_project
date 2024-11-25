@@ -7,7 +7,7 @@ cd "$(dirname "$SCRIPT")"
 
 # Perform a colcon build in the ~/psd_ws/ directory
 echo "Running colcon build in ~/psd_ws/"
-cd ~/psd_ws/
+cd ~/SmartDrive_project/psd_ws/
 colcon build --symlink-install --parallel-workers $(nproc)
 echo "colcon build completed"
 
