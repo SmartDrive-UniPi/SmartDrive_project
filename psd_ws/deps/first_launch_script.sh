@@ -119,6 +119,12 @@ remove_kortex_dependency_from_ros_components # Temporary fix due to an error in 
 update_rosdep       # Update rosdep and install ROS dependencies
 
 cd /home/ubuntu/psd_ws
+echo -e "${GREEN}Installing ROS2 controls...${NC}"
+vcs import --input https://raw.githubusercontent.com/ros-controls/ros2_control_ci/master/ros_controls.rolling-on-$ROS_DISTRO.repos src
+rosdep update --rosdistro=$ROS_DISTRO
+sudo apt-get update
+rosdep install --from-paths src --ignore-src -r -y
+
 sudo apt install tmuxinator -y
 
 echo -e "${GREEN}Building ROS packages...${NC}"
