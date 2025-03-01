@@ -38,16 +38,13 @@ else
     #     docker stop psd_container
     #     docker rm psd_container
     # fi
-    docker run -it \
-        --gpus all \
-        --user ubuntu \
-        --network=host \
-        --ipc=host \
-        -v $WS_PATH:/home/ubuntu/psd_ws \
-        -v /tmp/.X11-unix:/tmp/.X11-unix:rw \
-        --env=DISPLAY -v /dev:/dev \
-        --device-cgroup-rule="c *:* rmw" \
-        --name psd_container psd_noble_jazzy \
+    docker run -it --gpus all -e NVIDIA_DRIVER_CAPABILITIES=all \
+	--env="QT_X11_NO_MITSHM=1" --runtime=nvidia --user ubuntu \
+	--network=host --ipc=host \
+	-v /home/tazio/SmartDrive_project/psd_ws:/home/ubuntu/psd_ws \
+	-v /tmp/.X11-unix:/tmp/.X11-unix:rw --env=DISPLAY -v /dev:/dev \
+	--device-cgroup-rule="c *:* rmw" \
+	--name psd_container psd_noble_jazzy /bin/bash
     #  	/bin/bash -c "/home/ubuntu/psd_ws/deps/first_launch_script.sh"
     # commit changes to docker image
     # docker commit psd_container psd_noble_jazzy
@@ -64,14 +61,11 @@ fi
 xhost +local:docker
 #docker start psd_container
 #docker exec -it psd_container /bin/bash
-docker run -it \
-        --gpus all \
-        --user ubuntu \
-        --network=host \
-        --ipc=host \
-        -v $WS_PATH:/home/ubuntu/psd_ws \
-        -v /tmp/.X11-unix:/tmp/.X11-unix:rw \
-        --env=DISPLAY -v /dev:/dev \
-        --device-cgroup-rule="c *:* rmw" \
-        --name psd_container psd_noble_jazzy \
-        /bin/bash
+docker run -it --gpus all -e NVIDIA_DRIVER_CAPABILITIES=all \
+	--env="QT_X11_NO_MITSHM=1" --runtime=nvidia --user ubuntu \
+	--network=host --ipc=host \
+	-v /home/tazio/SmartDrive_project/psd_ws:/home/ubuntu/psd_ws \
+	-v /tmp/.X11-unix:/tmp/.X11-unix:rw --env=DISPLAY -v /dev:/dev \
+	--device-cgroup-rule="c *:* rmw" \
+	--name psd_container psd_noble_jazzy /bin/bash
+
