@@ -31,6 +31,11 @@
 	url = git@github.com:SmartDrive-UniPi/transport_drivers.git
 	branch = humble
 
+[submodule "Custom INTERFACE"]
+	path = psd_ws/src/psd_vehicle/actuation/control_interface
+	url = git@github.com:SmartDrive-UniPi/control_interface.git
+	branch = main 
+
 # SENSORS
 [submodule "IMU: Xsens MTI 680"]
 	path = psd_ws/src/psd_vehicle/sensors/Xsens_MTi_ROS_Driver_and_Ntrip_Client
