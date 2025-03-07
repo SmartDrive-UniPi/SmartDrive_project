@@ -1,0 +1,40 @@
+ros_to_can:
+  /psd_vehicle/pose:
+    can_id_base: 0x200
+    fields:
+      car_x: 
+        start_bit: 0
+        length: 32
+        type: float
+      car_y:
+        start_bit: 32
+        length: 32
+        type: float
+      car_yaw:
+        start_bit: 64
+        length: 32
+        type: float
+    segmentation:
+      max_payload: 8  # bytes per CAN frame
+      segments:
+        - offset: 0  # bytes
+        - offset: 4
+        - offset: 8
+
+can_to_ros:
+  /actuator/command:
+    can_id_base: 0x200
+    fields:
+      command:
+        start_bit: 0
+        length: 16
+        type: int
+      value:
+        start_bit: 16
+        length: 32
+        type: float
+    segmentation:
+      max_payload: 8  # bytes per CAN frame
+      segments:
+        - offset: 0
+        - offset: 4

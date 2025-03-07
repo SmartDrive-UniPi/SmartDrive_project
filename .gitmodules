@@ -12,13 +12,38 @@
 	path = psd_ws/src/custom_msgs
 	url = git@github.com:SmartDrive-UniPi/custom_msgs.git
 	branch = main
-	
-[submodule "psd_docker"]
-	path = psd_docker
-	url = git@github.com:SmartDrive-UniPi/psd_docker.git
-	branch = orin
 
-[submodule "psd_ws/src/ros2_can_interface"]
-	path = psd_ws/src/ros2_can_interface
+[submodule "psd_ws/src/psd_vehicle/ros2_can_interface"]
+	path = psd_ws/src/psd_vehicle/ros2_can_interface
 	url = https://github.com/rimaturus/ros2_can_interface.git
 	branch = master
+
+# Hardware Drivers
+
+# ACTUATION
+[submodule "VESC: vesc"]
+	path = psd_ws/src/psd_vehicle/actuation/vesc
+	url = git@github.com:SmartDrive-UniPi/vesc.git
+	branch = humble
+
+[submodule "VESC: Transport Drivers"]
+	path = psd_ws/src/psd_vehicle/actuation/transport_drivers
+	url = git@github.com:SmartDrive-UniPi/transport_drivers.git
+	branch = humble
+
+# SENSORS
+[submodule "IMU: Xsens MTI 680"]
+	path = psd_ws/src/psd_vehicle/sensors/Xsens_MTi_ROS_Driver_and_Ntrip_Client
+	url = git@github.com:SmartDrive-UniPi/Xsens_MTi_ROS_Driver_and_Ntrip_Client.git
+	branch = ros2
+
+[submodule "LiDAR: RPLiDAR S2"]
+	path = psd_ws/src/psd_vehicle/sensors/sllidar_ros2
+	url = git@github.com:SmartDrive-UniPi/sllidar_ros2.git
+	branch = simplified
+
+[submodule "Stereocam: ZED2"]
+	path = psd_ws/src/psd_vehicle/sensors/zed-ros2-wrapper
+	url = git@github.com:SmartDrive-UniPi/zed-ros2-wrapper.git
+	branch = simplified
+
