@@ -39,12 +39,18 @@ else
     #     docker rm psd_container
     # fi
     docker run -it --gpus all -e NVIDIA_DRIVER_CAPABILITIES=all \
-	--env="QT_X11_NO_MITSHM=1" --runtime=nvidia --user ubuntu \
-	--network=host --ipc=host \
-	-v $PWD/..//psd_ws:/home/ubuntu/psd_ws \
-	-v /tmp/.X11-unix:/tmp/.X11-unix:rw --env=DISPLAY -v /dev:/dev \
-	--device-cgroup-rule="c *:* rmw" \
-	--name psd_container psd_noble_jazzy /bin/bash
+			--env="QT_X11_NO_MITSHM=1" --runtime=nvidia --user ubuntu \
+			--network=host --ipc=host \
+			-v $PWD/../psd_ws:/home/ubuntu/psd_ws \
+			-v /tmp/.X11-unix:/tmp/.X11-unix:rw \
+			--env=DISPLAY -e DISPLAY=$DISPLAY \
+			--env=__GLX_VENDOR_LIBRARY_NAME=nvidia \
+			-v /dev:/dev \
+			-v /usr/lib/x86_64-linux-gnu/libGL.so.1:/usr/lib/x86_64-linux-gnu/libGL.so.1:ro \
+  			-v /usr/lib/x86_64-linux-gnu/libGLX.so.0:/usr/lib/x86_64-linux-gnu/libGLX.so.0:ro \
+			--device-cgroup-rule="c *:* rmw" \
+			--name psd_container psd_noble_jazzy /bin/bash
+
     #  	/bin/bash -c "/home/ubuntu/psd_ws/deps/first_launch_script.sh"
     # commit changes to docker image
     # docker commit psd_container psd_noble_jazzy
@@ -62,10 +68,16 @@ xhost +local:docker
 #docker start psd_container
 #docker exec -it psd_container /bin/bash
 docker run -it --gpus all -e NVIDIA_DRIVER_CAPABILITIES=all \
-	--env="QT_X11_NO_MITSHM=1" --runtime=nvidia --user ubuntu \
-	--network=host --ipc=host \
-	-v $PWD/../psd_ws:/home/ubuntu/psd_ws \
-	-v /tmp/.X11-unix:/tmp/.X11-unix:rw --env=DISPLAY -v /dev:/dev \
-	--device-cgroup-rule="c *:* rmw" \
-	--name psd_container psd_noble_jazzy /bin/bash
+			--env="QT_X11_NO_MITSHM=1" --runtime=nvidia --user ubuntu \
+			--network=host --ipc=host \
+			-v $PWD/../psd_ws:/home/ubuntu/psd_ws \
+			-v /tmp/.X11-unix:/tmp/.X11-unix:rw \
+			--env=DISPLAY -e DISPLAY=$DISPLAY \
+			--env=__GLX_VENDOR_LIBRARY_NAME=nvidia \
+			-v /dev:/dev \
+			-v /usr/lib/x86_64-linux-gnu/libGL.so.1:/usr/lib/x86_64-linux-gnu/libGL.so.1:ro \
+  			-v /usr/lib/x86_64-linux-gnu/libGLX.so.0:/usr/lib/x86_64-linux-gnu/libGLX.so.0:ro \
+			--device-cgroup-rule="c *:* rmw" \
+			--name psd_container psd_noble_jazzy /bin/bash
+
 
