@@ -10,6 +10,5 @@ windows:
         - ros2 launch psd_vehicle_bringup gz_sim.launch.py
         - ros2 run rviz2 rviz2 -d /home/ubuntu/psd_ws/startup/rviz/psd_vehicle.rviz
         - ros2 run custom_teleop custom_teleop_keyboard
-        - ros2 run psd_perception fake_perception
+        - ros2 run psd_perception cone_detection_lidar
         - ros2 run psd_slam fake_slam
-        - ros2 run cone_detection cone_detection_node
