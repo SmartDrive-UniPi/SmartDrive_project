@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-7b050ac6ed1f1fac899e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "zed_components",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "all_zed_components_files::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_zed_components_files-Release-00682e07c4370bb724cc.json",
+					"name" : "all_zed_components_files",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Release-bef3333f13b26b9eea09.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "zed_camera_component::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-zed_camera_component-Release-66e8af938d1cc1a8a852.json",
+					"name" : "zed_camera_component",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "zed_components_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-zed_components_uninstall-Release-943c0597c1c857707121.json",
+					"name" : "zed_components_uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/psd/SmartDrive_project/psd_ws/build/zed_components",
+		"source" : "/home/psd/SmartDrive_project/psd_ws/src/psd_vehicle/sensors/zed-ros2-wrapper/zed_components"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

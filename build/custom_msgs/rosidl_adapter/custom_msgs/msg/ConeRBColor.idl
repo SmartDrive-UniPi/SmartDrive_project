@@ -1,0 +1,24 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from custom_msgs/msg/ConeRBColor.msg
+// generated code does not contain a copyright notice
+
+
+module custom_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "This message will be used in a Float32MultiArray message.")
+    struct ConeRBColor {
+      @verbatim (language="comment", text=
+        "Distance to cone in meters")
+      float range;
+
+      @verbatim (language="comment", text=
+        "Angle to cone in radians relative to vehicle heading")
+      float bearing;
+
+      @verbatim (language="comment", text=
+        "Color of the cone (yellow=1, blue=2)")
+      float color;
+    };
+  };
+};

@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: ros2_can_interface
+Version: 0.0.0
+Summary: ROS 2 package for converting ROS 2 messages to CAN messages and vice versa.
+Maintainer: Edoardo Caciorgna
+Maintainer-email: edo.ca1999@gmail.com
+License: Apache License 2.0
+Requires-Dist: setuptools
+Requires-Dist: ament_index_python
+Dynamic: license
+Dynamic: maintainer
+Dynamic: maintainer-email
+Dynamic: requires-dist
+Dynamic: summary

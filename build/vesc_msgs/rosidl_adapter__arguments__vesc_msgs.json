@@ -1,0 +1,9 @@
+{
+  "package_name": "vesc_msgs",
+  "non_idl_tuples": [
+    "/home/psd/SmartDrive_project/psd_ws/src/psd_vehicle/actuation/vesc/vesc_msgs:msg/VescState.msg",
+    "/home/psd/SmartDrive_project/psd_ws/src/psd_vehicle/actuation/vesc/vesc_msgs:msg/VescStateStamped.msg",
+    "/home/psd/SmartDrive_project/psd_ws/src/psd_vehicle/actuation/vesc/vesc_msgs:msg/VescImu.msg",
+    "/home/psd/SmartDrive_project/psd_ws/src/psd_vehicle/actuation/vesc/vesc_msgs:msg/VescImuStamped.msg"
+  ]
+}

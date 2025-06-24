@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/psd/SmartDrive_project/psd_ws/build/psd_perception/cone_detection_stereocam" "/home/psd/SmartDrive_project/psd_ws/build/psd_perception/cone_detection_lidar" "TARGETS" "cone_detection_stereocam" "cone_detection_lidar" "DESTINATION" "lib/psd_perception")

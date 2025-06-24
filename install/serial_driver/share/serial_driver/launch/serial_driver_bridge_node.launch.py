@@ -1,0 +1,1 @@
+/home/psd/SmartDrive_project/psd_ws/src/psd_vehicle/actuation/transport_drivers/serial_driver/launch/serial_driver_bridge_node.launch.py

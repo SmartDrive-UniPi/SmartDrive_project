@@ -1,0 +1,1 @@
+/home/psd/SmartDrive_project/psd_ws/build/custom_msgs/rosidl_generator_cpp/custom_msgs/msg/cone_rb_color.hpp

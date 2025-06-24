@@ -1,0 +1,97 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-5ec1806c6703120f1da1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "vesc_driver",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-24edd14515ef61be7d7e.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vesc_device_namer::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vesc_device_namer-b18db6df1e857bf20d3d.json",
+					"name" : "vesc_device_namer",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vesc_driver::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vesc_driver-1d0ab33260de62afc99e.json",
+					"name" : "vesc_driver",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vesc_driver_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vesc_driver_node-cf2f0a36167030061f3b.json",
+					"name" : "vesc_driver_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vesc_driver_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vesc_driver_uninstall-c813ab05f70ddfee6602.json",
+					"name" : "vesc_driver_uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/psd/SmartDrive_project/psd_ws/build/vesc_driver",
+		"source" : "/home/psd/SmartDrive_project/psd_ws/src/psd_vehicle/actuation/vesc/vesc_driver"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

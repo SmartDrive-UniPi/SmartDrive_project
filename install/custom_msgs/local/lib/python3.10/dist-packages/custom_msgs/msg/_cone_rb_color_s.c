@@ -1,0 +1,1 @@
+/home/psd/SmartDrive_project/psd_ws/build/custom_msgs/rosidl_generator_py/custom_msgs/msg/_cone_rb_color_s.c

@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-2a752e7034d44d03c9c7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "psd_perception",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "cone_detection_lidar::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cone_detection_lidar-bb723abee3bf29a0334d.json",
+					"name" : "cone_detection_lidar",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cone_detection_stereocam::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cone_detection_stereocam-25b582be15e9bf565dad.json",
+					"name" : "cone_detection_stereocam",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "psd_perception_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-psd_perception_uninstall-a7e36779ad61b1193a97.json",
+					"name" : "psd_perception_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-eb19fb0d913c6ef0e10c.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/psd/SmartDrive_project/psd_ws/build/psd_perception",
+		"source" : "/home/psd/SmartDrive_project/psd_ws/src/psd_perception"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

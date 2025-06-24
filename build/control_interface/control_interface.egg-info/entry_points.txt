@@ -1,0 +1,2 @@
+[console_scripts]
+control_interface_node = control_interface.control_interface_node:main

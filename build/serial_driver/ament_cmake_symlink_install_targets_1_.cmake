@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/psd/SmartDrive_project/psd_ws/build/serial_driver/libserial_driver.so" "/home/psd/SmartDrive_project/psd_ws/build/serial_driver/libserial_driver_nodes.so" "TARGETS" "serial_driver" "serial_driver_nodes" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

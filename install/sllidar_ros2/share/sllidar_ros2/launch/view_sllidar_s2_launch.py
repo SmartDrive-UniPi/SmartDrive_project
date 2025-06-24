@@ -1,0 +1,1 @@
+/home/psd/SmartDrive_project/psd_ws/src/psd_vehicle/sensors/sllidar_ros2/launch/view_sllidar_s2_launch.py
