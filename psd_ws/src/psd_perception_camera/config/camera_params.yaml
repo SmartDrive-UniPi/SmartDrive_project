@@ -1,0 +1,30 @@
+camera_node:
+  ros__parameters:
+    # Model parameters
+    engine_path: "/path/to/your/yolov11.engine"
+    input_width: 640
+    input_height: 640
+    
+    # Detection parameters
+    conf_threshold: 0.5
+    nms_threshold: 0.4
+    
+    # Clustering parameters
+    dbscan_eps: 0.1
+    dbscan_min_samples: 5
+    
+    # Camera topics (adjust for your setup)
+    image_topic: "/zed2/zed_node/left/image_rect_color"
+    pointcloud_topic: "/zed2/zed_node/point_cloud/cloud_registered"
+    
+    # Output topics
+    cone_positions_topic: "/possible_cones"
+    visualization_topic: "/detected_bb"
+    
+    # Cone classes (FSOCO dataset)
+    cone_classes:
+      0: "blue"
+      1: "yellow"
+      2: "orange"
+      3: "large_orange"
+      4: "unknown"
