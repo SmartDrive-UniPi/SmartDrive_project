@@ -3,6 +3,7 @@
 	url = git@github.com:SmartDrive-UniPi/psd_gazebo_sim.git
 	branch = working
 	
+	
 [submodule "psd_ws/src/psd_perception"]
 	path = psd_ws/src/psd_perception
 	url = git@github.com:SmartDrive-UniPi/psd_perception.git
@@ -13,10 +14,10 @@
 	url = git@github.com:SmartDrive-UniPi/psd_slam.git
 	branch = main
 	
-[submodule "psd_ws/src/custom_msgs"]
-	path = psd_ws/src/custom_msgs
-	url = git@github.com:SmartDrive-UniPi/custom_msgs.git
-	branch = main
+# [submodule "psd_ws/src/custom_msgs"]
+# 	path = psd_ws/src/custom_msgs
+# 	url = git@github.com:SmartDrive-UniPi/custom_msgs.git
+# 	branch = main
 	
 [submodule "psd_docker"]
 	path = psd_docker
